@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        oswald:["var(--font-oswald)"],
+        pixel:["var(--font-pixel)"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
