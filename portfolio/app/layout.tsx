@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import {cn} from "@/lib/utils"
 import GrainEfffect from "@/components/visualEffects/grain-effect";
-import { Cursor } from "@/components/cursor/cursor";
+import Cursor from "@/components/cursor/cursor";
 
 const MainFont = Roboto({subsets: ["latin"],  weight: ["400", "700"]});
 const OswaldFont = Oswald({ subsets: ["latin"], variable: "--font-oswald"});
