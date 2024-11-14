@@ -4,6 +4,8 @@ import Card from "@/components/ui/card";
 import WaterWaveWrapper from "@/components/visualEffects/water-wave-wrapper";
 import { GoHomeFill } from "react-icons/go";
 import { FaUser } from "react-icons/fa";
+import Input from "@/components/ui/input";
+import TextArea from "@/components/ui/text-area";
 
 export default function Home() {
   return (
@@ -31,6 +33,10 @@ export default function Home() {
                 Google
               </Button>
             </div>
+            <Input type="text" placeholder="Full name"/>
+            <Input type="text" placeholder="Full name" icon={<FaUser/>}/>
+            <TextArea placeholder="Full name"/>
+            <TextArea placeholder="Full name" icon={<FaUser/>}/>
           </Card>
         </div>        
       </div>}
