@@ -6,6 +6,7 @@ import { GoHomeFill } from "react-icons/go";
 import { FaUser } from "react-icons/fa";
 import Input from "@/components/ui/input";
 import TextArea from "@/components/ui/text-area";
+import Profile from "@/components/ui/profile";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
             <Input type="text" placeholder="Full name" icon={<FaUser/>}/>
             <TextArea placeholder="Full name"/>
             <TextArea placeholder="Full name" icon={<FaUser/>}/>
+            <Profile/>
           </Card>
         </div>        
       </div>}
