@@ -8,6 +8,7 @@ import Input from "@/components/ui/input";
 import TextArea from "@/components/ui/text-area";
 import Profile from "@/components/ui/profile";
 import FancyButton from "@/components/ui/fancy-button";
+import LiveClock from "@/components/ui/live-clock";
 
 export default function Home() {
   return (
@@ -41,7 +42,9 @@ export default function Home() {
             <TextArea placeholder="Full name" icon={<FaUser/>}/>
             <Profile/>
             <div className="w-[350px]">
-            <FancyButton text="Contact me" icon={<FaArrowRight/>}/></div>            
+            <FancyButton text="Contact me" icon={<FaArrowRight/>}/>
+            </div>
+            <LiveClock timeZone="Europe/Sofia"/>            
           </Card>
         </div>        
       </div>}
