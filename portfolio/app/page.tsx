@@ -9,6 +9,8 @@ import TextArea from "@/components/ui/text-area";
 import Profile from "@/components/ui/profile";
 import FancyButton from "@/components/ui/fancy-button";
 import LiveClock from "@/components/ui/live-clock";
+import MagneticWrapper from "@/components/visualEffects/magnetic-wrapper";
+import ScrollDown from "@/components/ui/scroll-down";
 
 export default function Home() {
   return (
@@ -41,10 +43,13 @@ export default function Home() {
             <TextArea placeholder="Full name"/>
             <TextArea placeholder="Full name" icon={<FaUser/>}/>
             <Profile/>
-            <div className="w-[350px]">
-            <FancyButton text="Contact me" icon={<FaArrowRight/>}/>
-            </div>
-            <LiveClock timeZone="Europe/Sofia"/>            
+            <MagneticWrapper className="w-[350px]">
+              <FancyButton text="Contact me" icon={<FaArrowRight/>}/>
+            </MagneticWrapper>
+            <LiveClock timeZone="Europe/Sofia"/>
+            <MagneticWrapper className="">
+              <ScrollDown/>
+              </MagneticWrapper>            
           </Card>
         </div>        
       </div>}
